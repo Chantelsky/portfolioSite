@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: ". . . ." ". grid-area grid-area ." ". grid-area grid-area ." ". . . .";
-    height: 100vh;
+    height: 90vh;
   }
   
   .main-content { 
@@ -80,98 +80,69 @@
     h1 {
       text-align: center;
       color: $teal;
+      font-weight: normal;
+      padding-bottom: 1em;
     }
 
     @media screen and (max-width: 1440px) {
+      padding-top: 5px;
       font-size: .9em;
     }
 
     @media screen and (max-width: 425px) {
       font-size: .7em;
+      padding-top: 10%;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding-top: 38%;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding-top: 80%;
     }
   }
+
   
   .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 5px;
-    padding-bottom: 5em;
-
-    @media screen and (max-width: 1440px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 3;
-    }
+    padding-bottom: 2.5em;
+    width: 80%;
+    margin: 0 auto;
 
     @media screen and (max-width: 425px) {
-      padding-bottom: 0;
-      grid-gap: 2.5px;
+      grid-template-columns: repeat(1,1fr);
     }
   }
-  
+
   .gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-
-  @media screen and (max-width: 1440px) {
     width: 100%;
-  }
-  }
+    height: 100%;
+    object-fit: contain;
   
-  .gallery__item--1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-
     @media screen and (max-width: 1440px) {
-      grid-column-start: 1;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      width: 100%;
+      }
     }
-  }
-  
-  .gallery__item--2 {
-    grid-column-start: 3;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-
-    @media screen and (max-width: 1440px) {
-      grid-column-start: 1;
-      grid-row-start: 2;
-      grid-row-end: 3;
-    }
-  }
-  
-  .gallery__item--3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 6;
-
-    @media screen and (max-width: 1440px) {
-      grid-column-start: 1;
-      grid-row-start: 3;
-      grid-row-end: 4;
-    }
-  }
   
   .footer {
     color: #ffffff;
     background-color: #333333;
     text-align: center;
+    padding-bottom: .5em;
   }
   
   .footer-contact {
     padding: 5em 0;
   }
   
-  h2 {
+  p {
     font-weight: $light;
     padding-bottom: .5em;
-    font-size: 2em;
+    font-size: 1.2em;
 
     @media screen and (max-width: 1440px) {
       font-size: 1.5em;
@@ -180,10 +151,11 @@
   
   .button {
     position: relative;
-    border: 3px solid $watermelon;
-    font-size: 1.5em;
-    color: #FFFFFF;
-    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #ffff;
+    background-color: $watermelon;
     padding: .5em;
     width: 200px;
     text-align: center;
@@ -199,23 +171,6 @@
     }
   }
   
-  .button:after {
-    content: "";
-    background: $watermelon;
-    background: linear-gradient(180deg,$watermelon, #f090a6);
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-  
-  .button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+  .button:hover {
+    background-color: #cf4867;
   }
