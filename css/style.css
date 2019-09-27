@@ -112,6 +112,7 @@ body {
   .design-showcase {
     font-size: 0.7em;
     padding-top: 20%;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 375px) {
