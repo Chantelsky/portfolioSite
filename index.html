@@ -52,7 +52,14 @@
                         <figure class="gallery__item gallery__item--1">
                                 <a href="https://www.behance.net/gallery/86051371/Crown-Studio-Digital-Agency" target="_blank"><img src= "images/crownstudio.png"
                                 class="gallery__img" alt="Landing Page"></a>
-                        </figure> 
+                                <div class="text-wrap">
+                                <h3>CrownStudio - September to current (in production)</h3>
+                                <p>CrownStudio is a digital mockup wireframed in Figma. The landing page is built with industry standard web design and UI/UX trends</p>
+                                <h3>Tech Used:</h3>
+                                <p>Figma, Sass, ReactJS and Styled Components</p>
+                                </div>
+                        </figure>
+                        <figure></figure>
                        <figure class="gallery__item gallery__item--2">
                                 <a href="https://www.behance.net/gallery/85493263/Mod-Arquira" target="_blank"><img src= "images/Modarq.png"
                                 class="gallery__img" alt="Landing Page"></a>
@@ -75,6 +82,7 @@
                <div class="text">
                        Made with ❤️ & ☕ by Chantel Laver, 2019.
                </div>
+               <button title ="Beam me up!" onClick="topFunction()" id="myBtn">🚀</button>
         </div>
         <script src="three.r92.min.js"></script>
         <script src="vanta.birds.min.js"></script>
@@ -92,7 +100,12 @@
                 alignment: 21.00,
                 cohesion: 1.00,
                 quantity: 2.00
-        })
+        });
+
+        const topFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
         </script>
 </body>
 </html>
