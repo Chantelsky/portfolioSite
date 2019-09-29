@@ -223,9 +223,13 @@ p {
   overflow: hidden;
   cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+  .button {
+    width: 200px;
+  }
+}
 
 .button:hover {
-  outline: none;
   color: #EC5578;
   background-color: #ffffff;
 }

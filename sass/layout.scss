@@ -205,6 +205,10 @@
     overflow: hidden;
     cursor: pointer;
 
+    @media screen and (max-width: 375px) {
+      width: 200px;
+    }
+
     // @media screen and (max-width: 1440px) {
     //   font-size: 1em;
     // }
@@ -215,7 +219,6 @@
   }
 
   .button:hover {
-    outline: none;
     color: $watermelon;
     background-color: #ffffff
   }
