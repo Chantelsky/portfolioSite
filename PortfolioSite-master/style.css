@@ -1,0 +1,254 @@
+/*colors*/
+/* font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . . ." ". grid-area grid-area ." ". grid-area grid-area ." ". . . .";
+  height: 100vh;
+}
+
+.main-content {
+  grid-area: grid-area;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.description-header {
+  color: #EC5578;
+  font-size: 6.5em;
+}
+@media screen and (max-width: 1440px) {
+  .description-header {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .description-header {
+    font-size: 3em;
+  }
+}
+@media screen and (max-height: 640) {
+  .description-header {
+    font-size: 1px;
+  }
+}
+
+.description-subheading {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1440px) {
+  .description-subheading {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .description-subheading {
+    font-size: 1em;
+  }
+}
+
+.prof-titles {
+  color: #008080;
+  font-weight: 500;
+}
+
+.description-subheading2 {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 1440px) {
+  .description-subheading2 {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .description-subheading2 {
+    font-size: 0.7em;
+  }
+}
+
+.description-links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-top: 1em;
+}
+@media screen and (max-width: 425px) {
+  .description-links {
+    font-size: 0.7em;
+  }
+}
+.description-links li > a {
+  text-decoration: none;
+  color: #008080;
+  padding-right: 1rem;
+  font-weight: 500;
+}
+
+.design-showcase h1 {
+  text-align: center;
+  color: #008080;
+}
+@media screen and (max-width: 1440px) {
+  .design-showcase {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .design-showcase {
+    font-size: 0.7em;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1;
+  grid-gap: 5px;
+  padding-bottom: 5em;
+}
+@media screen and (max-width: 1440px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+  }
+}
+@media screen and (max-width: 425px) {
+  .gallery {
+    padding-bottom: 0;
+    grid-gap: 2.5px;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1440px) {
+  .gallery__img {
+    width: 100%;
+  }
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+@media screen and (max-width: 1440px) {
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+@media screen and (max-width: 1440px) {
+  .gallery__item--2 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.gallery__item--3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+@media screen and (max-width: 1440px) {
+  .gallery__item--3 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #333333;
+  text-align: center;
+}
+
+.footer-contact {
+  padding: 5em 0;
+}
+
+h2 {
+  font-weight: 300;
+  padding-bottom: 0.5em;
+  font-size: 2em;
+}
+@media screen and (max-width: 1440px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+.button {
+  position: relative;
+  border: 3px solid #EC5578;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 0.5em;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .button {
+    font-size: 1em;
+  }
+}
+
+.button:after {
+  content: "";
+  background: #EC5578;
+  background: linear-gradient(180deg, #EC5578, #f090a6);
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/*# sourceMappingURL=style.css.map */

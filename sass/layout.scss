@@ -122,6 +122,10 @@
     p {
       font-size: 1em;
     }
+
+    // @media screen and (max-width: 1440px) {
+    //   font-size: .5em;
+    // }
   }
 
   
@@ -167,11 +171,6 @@
     text-align: center;
     padding-bottom: .8em;
     position: relative;
-    font-size: 2em;
-
-    @media screen and (max-width: 425px) {
-      font-size: 1.5em;
-    }
   }
   
   .footer-contact {
@@ -187,6 +186,9 @@
       font-size: 1.5em;
     }
 
+    @media screen and (max-width: 425px) {
+      font-size: 1.5em;
+    }
   }
   
   .button {

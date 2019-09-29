@@ -1,0 +1,370 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . ." ". grid-area grid-area ." ". grid-area grid-area ." ". . . .";
+    height: 90vh;
+  }
+  
+  .main-content { 
+    grid-area: grid-area;;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .description-header {
+    color: $watermelon;
+    font-size: 6.5em;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 4em;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 3em;
+    }
+
+  }
+  
+  .description-subheading {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 1.2em;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 1em;
+    }
+  }
+  
+  .prof-titles {
+    color: $teal;
+    font-weight: $heavy;
+  }
+  
+  .description-subheading2 {
+    font-size: 1.2em;
+
+    @media screen and (max-width: 1440px) {
+      font-size: .9em;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: .8em;
+    }
+  }
+  
+  .description-links {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      padding-top:1em;
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 425px) {
+        font-size: .7em;
+        justify-content: space-between;
+      }
+  
+      li > a {
+        text-decoration: none;
+        color: $teal;
+        padding-right: 1rem;
+        font-weight: $heavy;
+      }
+
+      li:hover {
+        -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+          animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      }
+  }
+  
+  .design-showcase {
+    
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      padding-bottom: 1em;
+      margin-top: 10px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      padding-top: 20%;
+      font-size: .9em;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding-top: 5%;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 20%;
+      font-size: .9em;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: .7em;
+      padding-top: 40%;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding-top: 38%;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding-top: 80%;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: 1440px) {
+      font-size: .5em;
+    }
+  }
+
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+
+    @media screen and (max-width: 425px) {
+      grid-template-columns: repeat(1,1fr);
+      width: 70%;
+    }
+  }
+
+  .text-wrap {
+    background: #ffffff;
+  }
+
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  
+    @media screen and (max-width: 1440px) {
+      width: 100%;
+      }
+    }
+
+    .gallery__item:hover {
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+
+  
+  .footer {
+    color: #ffffff;
+    background-color: #333333;
+    text-align: center;
+    padding-bottom: .8em;
+    position: relative;
+    font-size: 1.2em;
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.5em;
+    }
+  }
+  
+  .footer-contact {
+    padding: 1em 0;
+  }
+  
+  p {
+    font-weight: $light;
+    padding-bottom: .5em;
+    font-size: 1.2em;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 1.5em;
+    }
+
+  }
+  
+  .button {
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #ffff;
+    background-color: $watermelon;
+    padding: .5em;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.5em;
+    }
+  }
+  
+  .button:hover {
+    background-color: #cf4867;
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  #myBtn {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 20px;
+
+    @media screen and (max-width: 1440px) {
+     right: 0;
+    }
+  }
+
+  #myBtn:hover {
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+	  animation: vibrate-1 0.3s linear infinite both;
+  }
+
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2019-9-29 16:40:14
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-9-29 16:49:31
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-hor-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
+@keyframes rotate-hor-center {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+            transform: rotateX(-360deg);
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-9-29 17:11:40
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation vibrate-1
+ * ----------------------------------------
+ */
+ @-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+

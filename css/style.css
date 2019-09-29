@@ -143,11 +143,6 @@ body {
 .design-showcase p {
   font-size: 1em;
 }
-@media screen and (max-width: 1440px) {
-  .design-showcase {
-    font-size: 0.5em;
-  }
-}
 
 .gallery {
   display: grid;
@@ -191,12 +186,6 @@ body {
   text-align: center;
   padding-bottom: 0.8em;
   position: relative;
-  font-size: 2em;
-}
-@media screen and (max-width: 425px) {
-  .footer {
-    font-size: 1.5em;
-  }
 }
 
 .footer-contact {
@@ -209,6 +198,11 @@ p {
   font-size: 1.2em;
 }
 @media screen and (max-width: 1440px) {
+  p {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 425px) {
   p {
     font-size: 1.5em;
   }
