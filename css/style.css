@@ -72,7 +72,7 @@ body {
 }
 @media screen and (max-width: 425px) {
   .description-subheading2 {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -126,8 +126,8 @@ body {
 @media screen and (max-width: 425px) {
   .design-showcase {
     font-size: 0.7em;
-    padding-top: 30%;
-    margin-top: 20px;
+    padding-top: 40%;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -156,11 +156,12 @@ body {
   grid-gap: 5px;
   width: 60%;
   margin: 0 auto;
-  padding-bottom: 3%;
+  padding-bottom: 2.5%;
 }
 @media screen and (max-width: 425px) {
   .gallery {
     grid-template-columns: repeat(1, 1fr);
+    width: 70%;
   }
 }
 
@@ -190,6 +191,12 @@ body {
   text-align: center;
   padding-bottom: 0.8em;
   position: relative;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    font-size: 1.5em;
+  }
 }
 
 .footer-contact {
@@ -229,6 +236,11 @@ p {
     font-size: 1em;
   }
 }
+@media screen and (max-width: 425px) {
+  .button {
+    font-size: 1.5em;
+  }
+}
 
 .button:hover {
   background-color: #cf4867;
@@ -247,6 +259,11 @@ p {
   font-size: 2em;
   cursor: pointer;
   padding: 20px;
+}
+@media screen and (max-width: 1440px) {
+  #myBtn {
+    right: 0;
+  }
 }
 
 #myBtn:hover {

@@ -53,7 +53,7 @@
     }
 
     @media screen and (max-width: 425px) {
-      font-size: .7em;
+      font-size: .8em;
     }
   }
   
@@ -107,8 +107,8 @@
 
     @media screen and (max-width: 425px) {
       font-size: .7em;
-      padding-top: 30%;
-      margin-top: 20px;
+      padding-top: 40%;
+      margin-top: 50px;
     }
 
     @media screen and (max-width: 375px) {
@@ -136,10 +136,11 @@
     grid-gap: 5px;
     width: 60%;
     margin: 0 auto;
-    padding-bottom: 3%;
+    padding-bottom: 2.5%;
 
     @media screen and (max-width: 425px) {
       grid-template-columns: repeat(1,1fr);
+      width: 70%;
     }
   }
 
@@ -170,6 +171,11 @@
     text-align: center;
     padding-bottom: .8em;
     position: relative;
+    font-size: 1.2em;
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.5em;
+    }
   }
   
   .footer-contact {
@@ -184,6 +190,7 @@
     @media screen and (max-width: 1440px) {
       font-size: 1.5em;
     }
+
   }
   
   .button {
@@ -204,7 +211,10 @@
 
     @media screen and (max-width: 1440px) {
       font-size: 1em;
+    }
 
+    @media screen and (max-width: 425px) {
+      font-size: 1.5em;
     }
   }
   
@@ -225,6 +235,10 @@
     font-size: 2em;
     cursor: pointer;
     padding: 20px;
+
+    @media screen and (max-width: 1440px) {
+     right: 0;
+    }
   }
 
   #myBtn:hover {
