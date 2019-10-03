@@ -96,6 +96,11 @@ body {
     text-align: center;
   }
 }
+@media only screen and (max-height: 600px) {
+  .description-links {
+    flex-direction: row;
+  }
+}
 .description-links li > a {
   text-decoration: none;
   color: #008080;
@@ -109,8 +114,20 @@ body {
 
 .heading {
   text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .heading {
+    padding-top: 40%;
+    font-size: 0.7em;
+  }
 }
 @media screen and (max-width: 425px) {
+  .heading {
+    display: none;
+  }
+}
+@media screen and (max-height: 700px) {
   .heading {
     display: none;
   }
@@ -125,12 +142,27 @@ body {
 }
 @media only screen and (max-width: 375px) {
   .gallery {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-height: 320px) {
   .gallery {
-    padding-top: 60%;
+    padding-top: 70%;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .gallery {
+    padding-top: 80%;
+  }
+}
+@media only screen and (max-height: 690px) {
+  .gallery {
+    padding-top: 90%;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .gallery {
+    padding-top: 100%;
   }
 }
 
